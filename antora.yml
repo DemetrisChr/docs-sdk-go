@@ -1,5 +1,5 @@
 name: go-sdk
-version: '2.8'
+version: '2.9'
 title: Go SDK
 start_page: hello-world:overview.adoc
 nav:
@@ -7,14 +7,14 @@ nav:
 asciidoc:
   attributes:
     page-nav-header-levels: 1
-    server_version: '7.6'
-    sdk_current_version: '2.8.0'
-    sdk_dot_minor: '2.8'
+    server_version: '7.6.2'
+    sdk_current_version: '2.9.0'
+    sdk_dot_minor: '2.9'
     sdk_dot_major: 2.x'
     version-server: '7.6'
-    version-common: '7.5'
+    version-common: '7.6'
     name_platform: 'Go'
     name-sdk: 'Go SDK'
-    sdk_api: '3.5'
+    sdk_api: '3.6'
     sdk-api-link: https://pkg.go.dev/github.com/couchbase/gocb/v2
     sdk-gh-link: https://github.com/couchbase/gocb
