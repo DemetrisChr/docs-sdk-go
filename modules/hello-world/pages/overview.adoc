@@ -1,9 +1,9 @@
-= Couchbase Go SDK 2.8
+= Couchbase Go SDK 2.0
 :page-layout: landing-page-top-level-sdk
 :page-role: tiles
 :!sectids:
 
-= Couchbase Go SDK 2.8
+= Couchbase Go SDK 2.9
 
 [source,go]
 ----
