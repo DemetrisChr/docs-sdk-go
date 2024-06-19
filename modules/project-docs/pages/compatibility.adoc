@@ -9,7 +9,7 @@ Plus notes on Cloud, networks, and AWS Lambda.
 {description}
 
 In line with the https://golang.org/doc/devel/release.html#policy[Golang project], we support both the current, and the previous, versions of Go.
-At time of writing (March 2024), this is 1.21 and 1.22.
+At time of writing (June 2024), this is 1.21 and 1.22.
 Older versions may remain compatible, but are not supported.
 
 
@@ -42,7 +42,7 @@ The {name-sdk} is tested and supported on the following OSs and platforms:
 === Mac OS X
 
 The current and previous two releases of OS X.
-At time of writing (March 2024): 14 (Sonoma), 13 (Ventura), and 12 (Monterey).
+At time of writing (June 2024): 14 (Sonoma), 13 (Ventura), and 12 (Monterey).
 M1 ARM  architecture is fully supported in the Scala SDK.
 
 [discrete]
@@ -106,7 +106,7 @@ It is best to upgrade either the SDK or the Couchbase version you are using.
 [#table_sdk_versions]
 [cols="40,20,25"]
 |===
-| | SDK 2.3 - 2.7 | 2.8
+| | SDK 2.3 - 2.7 | 2.8 - 2.9
 
 | *Server 7.0-7.2*
 | *✔*
@@ -135,7 +135,7 @@ include::{version-common}@sdk:shared:partial$capella.adoc[tag=cloud]
 [.table-merge-cells]
 [cols="7,6,6,6"]
 |===
-| | Server 7.0 & 7.1 | Server 7.2 | Server 7.6
+| | Server 7.0 & 7.1 | Server 7.2 | Server 7.6.x
 
 | Enhanced Durability
 3+| All SDK versions
