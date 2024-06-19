@@ -34,23 +34,33 @@ We always recommend using the latest version of the SDK -- it contains all of th
 All patch releases for each dot minor release should be API compatible, and safe to upgrade;
 any changes to expected behavior are noted in the release notes that follow.
 
-
-=== Version 2.9.0 (19 June 2024)
+=== Version 2.9.0 (18 June 2024)
 
 Version 2.9.0 is the first release in the Go SDK 2.9 series.
 
 https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.9.0?tab=doc[API Documentation]
 
-// ?
+Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
 
 ==== New Features and Behavioral Changes
 
-// ?
+* https://issues.couchbase.com/browse/GOCBC-1626[GOCBC-1626]:
+Addressed an issue where performing operations after calling cluster.Close (or calling close twice) would lead to a panic.
+On close the SDK will now cancel all in flight operations and block waiting for them to complete/be cancelled.
+All operations will now fast fail if called after close.
+* https://issues.couchbase.com/browse/GOCBC-1631[GOCBC-1631]:
+Added handling to treat memcached scope not found errors the same as collection not found errors.
+* https://issues.couchbase.com/browse/GOCBC-1634[GOCBC-1634]:
+Added support for base64 encoded vector queries.
+* https://issues.couchbase.com/browse/GOCBC-1642[GOCBC-1642]:
+Moved vector search API support level to committed.
 
+==== Fixed Issues
 
-
-
-
+* https://issues.couchbase.com/browse/GOCBC-1625[GOCBC-1625]:
+Fixed issue where SDK could not receive large (> 4MB) documents in `couchbase2` mode.
+* https://issues.couchbase.com/browse/GOCBC-1636[GOCBC-1636]:
+Fixed issue where a race accessing config watchers could occur on agent close.
 
 == Go SDK 2.8 Releases
 
