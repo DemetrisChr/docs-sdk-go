@@ -1,9 +1,6 @@
 = Errors and Diagnostics
 :description: When the unexpected happens, take a step-by-step approach.
 :nav-title: Errors & Diagnostics
-:page-topic-type: concept
-
-include::project-docs:partial$attributes.adoc[]
 
 [abstract]
 {description}

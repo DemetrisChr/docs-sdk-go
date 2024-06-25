@@ -1,7 +1,6 @@
 = Logging
 :description: pass:q[Logging with `gocb.Logger` & using other implementations.]
 :nav-title: Logging
-:page-topic-type: howto
 
 [abstract]
 {description}

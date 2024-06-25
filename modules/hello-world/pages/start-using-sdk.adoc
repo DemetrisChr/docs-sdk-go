@@ -3,7 +3,6 @@
 :page-aliases: ROOT:getting-started,ROOT:start-using,ROOT:hello-couchbase,ROOT:start-using-sdk
 :page-toclevels: 2
 :page-pagination: next
-:page-topic-type: tutorial
 
 [abstract]
 {description}

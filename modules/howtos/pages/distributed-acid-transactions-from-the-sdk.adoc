@@ -1,12 +1,10 @@
 = Using Couchbase Transactions
 :description: A practical guide to using Couchbase’s distributed ACID transactions, via the Go SDK.
 :page-partial:
-:page-topic-type: howto
 :page-aliases: acid-transactions
 :page-toclevels: 2
 :page-pagination: next
 
-include::project-docs:partial$attributes.adoc[]
 include::howtos:partial$acid-transactions-attributes.adoc[]
 
 [abstract]

@@ -1,10 +1,8 @@
 = Authentication
 :description: As well as Role-Based Access Control (RBAC), Couchbase offers connection with Certificate Authentication, and works transparently with LDAP.
-:page-topic-type: howto
 :page-edition: Enterprise Edition
 :page-aliases: ROOT:sdk-authentication-overview
 
-include::project-docs:partial$attributes.adoc[]
 
 [abstract]
 {description}
