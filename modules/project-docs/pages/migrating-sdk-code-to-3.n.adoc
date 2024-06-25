@@ -1,9 +1,7 @@
 = Migrating to SDK 3 API
 :description: The SDK 3.x API used in Go SDK 2.x breaks the existing 2.x APIs (used in Go SDK 1.6) in order to provide a number of improvements.
-:page-topic-type: concept
 :page-aliases: ROOT:migrate
 
-include::project-docs:partial$attributes.adoc[]
 
 [abstract]
 {description}

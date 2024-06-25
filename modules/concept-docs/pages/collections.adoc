@@ -1,9 +1,7 @@
 = Collections and Scopes
 :description: pass:q[Fully supported in Couchbase Server 7.1.]
-:page-topic-type: concept
 :nav-title: Collections
 
-include::project-docs:partial$attributes.adoc[]
 
 [abstract]
 {description}

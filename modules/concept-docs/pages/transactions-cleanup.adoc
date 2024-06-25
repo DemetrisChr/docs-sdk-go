@@ -6,7 +6,6 @@
 [abstract]
 {description}
 
-include::project-docs:partial$attributes.adoc[]
 include::howtos:partial$acid-transactions-attributes.adoc[]
 
 Transactions will try to clean up after themselves in the advent of failures. However, there are situations that inevitably created failed, or 'lost' transactions, such as an application crash.
