@@ -15,7 +15,7 @@ For release notes, download links, and installation methods for 1.6 and earlier 
 
 [source,console]
 ----
-$ go get github.com/couchbase/gocb/v2@v2.9.0
+$ go get github.com/couchbase/gocb/v2@v2.9.1
 ----
 
 NOTE: In line with the https://golang.org/doc/devel/release.html#policy[Golang project], we support both the current, and the previous, versions of Go.
@@ -32,6 +32,26 @@ The most current and up to date API Documentation is always available through th
 We always recommend using the latest version of the SDK -- it contains all of the latest security patches and support for new and upcoming features.
 All patch releases for each dot minor release should be API compatible, and safe to upgrade;
 any changes to expected behavior are noted in the release notes that follow.
+
+=== Version 2.9.1 (18 July 2024)
+
+Version 2.9.1  is a maintenance release for the Go SDK 2.9.
+
+https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.91?tab=doc[API Documentation]
+
+Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
+
+==== New Features and Behavioral Changes
+
+* https://issues.couchbase.com/browse/GOCBC-1640[GOCBC-1640]:
+Adjusted logging levels when logging about receiving cluster configs older than the SDK already has.
+
+==== Fixed Issues
+
+* https://issues.couchbase.com/browse/GOCBC-1625[GOCBC-1625]:
+Fixed issue where a data race could occur when requests were retried concurrently with being cancelled.
+* https://issues.couchbase.com/browse/GOCBC-1643[GOCBC-1643]:
+Fixed issue where couchbase2 mode did not wait for operations to complete on close.
 
 === Version 2.9.0 (18 June 2024)
 
