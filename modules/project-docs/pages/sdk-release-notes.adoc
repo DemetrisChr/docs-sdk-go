@@ -15,7 +15,7 @@ For release notes, download links, and installation methods for 1.6 and earlier 
 
 [source,console]
 ----
-$ go get github.com/couchbase/gocb/v2@v2.9.1
+$ go get github.com/couchbase/gocb/v2@v2.9.2
 ----
 
 NOTE: In line with the https://golang.org/doc/devel/release.html#policy[Golang project], we support both the current, and the previous, versions of Go.
@@ -33,11 +33,33 @@ We always recommend using the latest version of the SDK -- it contains all of th
 All patch releases for each dot minor release should be API compatible, and safe to upgrade;
 any changes to expected behavior are noted in the release notes that follow.
 
+=== Version 2.9.2 (25 September 2024)
+
+Version 2.9.2 is a maintenance release for the Go SDK 2.9.
+
+https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.9.2?tab=doc[API Documentation]
+
+Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
+
+=== New Features and Behavioral Changes
+
+* https://jira.issues.couchbase.com/browse/GOCBC-1632[GOCBC-1632]:
+Added support for zone-aware replica reads, at API stability level *uncommitted*.
+* https://jira.issues.couchbase.com/browse/GOCBC-1657[GOCBC-1657]:
+Updated tracing when using the `couchbase2` scheme, to send traces to the server over gRPC.
+
+=== Fixed Issues
+
+* https://jira.issues.couchbase.com/browse/GOCBC-1655[GOCBC-1655]:
+Fixed the error messages for some connection string parameter parsing errors, where the message was not referring to the correct parameter.
+* https://jira.issues.couchbase.com/browse/GOCBC-1660[GOCBC-1660]:
+Fixed a possible data race that occured because the value of a lock was being logged at debug-level.
+
 === Version 2.9.1 (18 July 2024)
 
 Version 2.9.1  is a maintenance release for the Go SDK 2.9.
 
-https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.91?tab=doc[API Documentation]
+https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.9.1?tab=doc[API Documentation]
 
 Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
 
