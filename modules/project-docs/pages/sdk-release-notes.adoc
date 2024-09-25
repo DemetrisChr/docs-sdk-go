@@ -41,14 +41,14 @@ https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.9.2?tab=doc[API Documentation
 
 Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
 
-=== New Features and Behavioral Changes
+==== New Features and Behavioral Changes
 
 * https://jira.issues.couchbase.com/browse/GOCBC-1632[GOCBC-1632]:
 Added support for zone-aware replica reads, at API stability level *uncommitted*.
 * https://jira.issues.couchbase.com/browse/GOCBC-1657[GOCBC-1657]:
 Updated tracing when using the `couchbase2` scheme, to send traces to the server over gRPC.
 
-=== Fixed Issues
+==== Fixed Issues
 
 * https://jira.issues.couchbase.com/browse/GOCBC-1655[GOCBC-1655]:
 Fixed the error messages for some connection string parameter parsing errors, where the message was not referring to the correct parameter.
