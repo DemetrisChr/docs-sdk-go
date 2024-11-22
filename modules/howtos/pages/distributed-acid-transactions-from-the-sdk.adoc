@@ -252,6 +252,8 @@ This is because the first mutation also triggers the creation of metadata for th
 * All concurrent operations must be allowed to complete fully, so the transaction can track which operations need to be rolled back in the event of failure.
 This means the application must 'swallow' the error, but record that an error occurred, and then at the end of the concurrent operations, if an error occurred, throw an error to cause the transaction to retry.
 
+include::{version-common}@sdk:shared:partial$acid-transactions.adoc[tag=query-perf-note]
+
 === Non-Transactional Writes
 
 To ensure key-value performance is not compromised, and to avoid conflicting writes, applications should *never* perform non-transactional _writes_ concurrently with transactional ones, on the same document.
