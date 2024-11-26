@@ -33,6 +33,37 @@ We always recommend using the latest version of the SDK -- it contains all of th
 All patch releases for each dot minor release should be API compatible, and safe to upgrade;
 any changes to expected behavior are noted in the release notes that follow.
 
+
+
+=== Version 2.9.3 (26 November 2024)
+
+Version 2.9.3 is a maintenance release for the Go SDK 2.9.
+
+https://pkg.go.dev/github.com/couchbase/gocb/v2@v2.9.3?tab=doc[API Documentation]
+
+Tracing and metrics with the `couchbase2` scheme should be considered stability level *volatile* at this time.
+
+==== New Features and Behavioral Changes
+
+* https://jira.issues.couchbase.com/browse/GOCBC-1656[GOCBC-1656]:
+Added support for zone-aware replica reads to transactions, at API stability level *uncommitted*.
+* https://jira.issues.couchbase.com/browse/GOCBC-1658[GOCBC-1658]:
+Added more contextual labels to metrics.
+* https://jira.issues.couchbase.com/browse/GOCBC-1674[GOCBC-1674]:
+Added support for `max_perhost_http_connections` connection string parameter.
+* https://jira.issues.couchbase.com/browse/GOCBC-1677[GOCBC-1677]:
+vbucket id is now included in trace level dispatch logs,
+to aid debugging issues where `NotMyVbucket` is received.
+* https://jira.issues.couchbase.com/browse/GOCBC-1680[GOCBC-1680]:
+Improved retry handling for http operations.
+
+==== Fixed Issues
+
+* https://jira.issues.couchbase.com/browse/GOCBC-1660[GOCBC-1660]:
+Fixed potential data race that was occurring because the value of a lock was being logged in `kvMux`.
+
+
+
 === Version 2.9.2 (25 September 2024)
 
 Version 2.9.2 is a maintenance release for the Go SDK 2.9.
